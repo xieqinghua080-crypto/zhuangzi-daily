@@ -1,0 +1,38 @@
+name: ZhuangziDaily
+options:
+  bundleIdPrefix: com.zhuangzidaily
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.0"
+
+settings:
+  SWIFT_VERSION: "5.9"
+
+targets:
+  ZhuangziDaily:
+    type: application
+    platform: iOS
+    sources:
+      - path: ZhuangziDaily
+        type: group
+    settings:
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      DEVELOPMENT_TEAM: R97469L47A
+      PRODUCT_BUNDLE_IDENTIFIER: com.zhuangzidaily.ZhuangziDaily
+      CODE_SIGN_STYLE: Automatic
+    info:
+      path: ZhuangziDaily/Info.plist
+      properties:
+        CFBundleDisplayName: 庄子的每日签
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        CFBundleIconName: AppIcon
+        UILaunchScreen:
+          UIColorName: ""
+        UIRequiredDeviceCapabilities:
+          - armv7
+        UIApplicationSupportsIndirectInputEvents: true
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false

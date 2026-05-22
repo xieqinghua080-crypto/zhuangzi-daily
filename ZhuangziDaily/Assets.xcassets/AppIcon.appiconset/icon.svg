@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- 背景渐变 - 深蓝到墨绿 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="50%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+
+    <!-- 蝴蝶渐变 -->
+    <linearGradient id="butterfly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a96e"/>
+      <stop offset="100%" stop-color="#e8d5a3"/>
+    </linearGradient>
+
+    <!-- 光晕 -->
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 圆环渐变 -->
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#e8d5a3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 圆角方形背景 -->
+  <rect x="0" y="0" width="1024" height="1024" rx="225" fill="url(#bg)"/>
+
+  <!-- 顶部光晕 -->
+  <ellipse cx="512" cy="350" rx="300" ry="250" fill="url(#glow)"/>
+
+  <!-- 外圈圆环 -->
+  <circle cx="512" cy="460" r="240" fill="none" stroke="url(#ring)" stroke-width="1.5"/>
+
+  <!-- 蝴蝶：左翅膀 -->
+  <g transform="translate(512, 420)" opacity="0.95">
+    <!-- 左上翅 -->
+    <path d="M-4,-20 C-30,-60 -100,-100 -140,-60 C-170,-30 -160,10 -120,30 C-100,40 -60,30 -30,10 Z"
+          fill="url(#butterfly)" opacity="0.9"/>
+    <!-- 左下翅 -->
+    <path d="M-4,10 C-25,30 -70,60 -100,80 C-120,90 -130,70 -110,50 C-90,35 -50,20 -20,10 Z"
+          fill="url(#butterfly)" opacity="0.7"/>
+
+    <!-- 右上翅 -->
+    <path d="M4,-20 C30,-60 100,-100 140,-60 C170,-30 160,10 120,30 C100,40 60,30 30,10 Z"
+          fill="url(#butterfly)" opacity="0.9"/>
+    <!-- 右下翅 -->
+    <path d="M4,10 C25,30 70,60 100,80 C120,90 130,70 110,50 C90,35 50,20 20,10 Z"
+          fill="url(#butterfly)" opacity="0.7"/>
+
+    <!-- 身体 -->
+    <ellipse cx="0" cy="-5" rx="4" ry="25" fill="#b8944a"/>
+    <!-- 触角 -->
+    <path d="M-3,-25 C-15,-45 -35,-55 -45,-60" fill="none" stroke="#b8944a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M3,-25 C15,-45 35,-55 45,-60" fill="none" stroke="#b8944a" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 底部文字：庄子的每日签 -->
+  <g transform="translate(512, 810)">
+    <text text-anchor="middle" font-family="Hei, PingFang SC, STHeiti, sans-serif"
+          font-size="42" fill="#c9a96e" letter-spacing="12" opacity="0.9">庄子的每日签</text>
+  </g>
+
+  <!-- 左竖线装饰 -->
+  <line x1="140" y1="140" x2="140" y2="884" stroke="#c9a96e" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,8"/>
+
+  <!-- 右下角小蝶装饰 -->
+  <g transform="translate(690, 680) scale(0.25)" opacity="0.15">
+    <path d="M-2,-10 C-10,-25 -35,-40 -50,-30 C-55,-20 -50,-5 -40,5 C-35,10 -20,8 -10,5 Z" fill="#c9a96e"/>
+    <path d="M2,-10 C10,-25 35,-40 50,-30 C55,-20 50,-5 40,5 C35,10 20,8 10,5 Z" fill="#c9a96e"/>
+    <path d="M-2,5 C-10,15 -25,30 -35,35 C-40,38 -42,30 -38,22 C-32,15 -18,8 -8,5 Z" fill="#c9a96e" opacity="0.7"/>
+    <path d="M2,5 C10,15 25,30 35,35 C40,38 42,30 38,22 C32,15 18,8 8,5 Z" fill="#c9a96e" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="1.5" ry="10" fill="#b8944a"/>
+  </g>
+</svg>
