@@ -28,7 +28,7 @@ Since all data is stored locally on your device, deleting the app will remove al
 
 ### Contact
 
-If you have questions about this privacy policy, please contact us at the email associated with your App Store account.
+If you have questions about this privacy policy, please contact us at **516459463@qq.com**.
 
 ---
 
@@ -58,4 +58,4 @@ If you have questions about this privacy policy, please contact us at the email 
 
 ### 联系方式
 
-如对隐私政策有疑问，请通过你的 App Store 账户关联邮箱联系我们。
+如对隐私政策有疑问，请通过以下方式联系我们：**516459463@qq.com**（1–2 个工作日内回复）
